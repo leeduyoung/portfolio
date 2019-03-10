@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+		"jsx": "react",
+		"outDir": "bin",
+        
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitAny": true,
+        "downlevelIteration": true, 
+        
+        "lib": [
+            "dom",
+            "es2015"
+        ]
+    }
+}
