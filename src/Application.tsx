@@ -1,15 +1,23 @@
-import * as React from 'react';
-import ReactDOM = require('react-dom');
-import { ReactUtil } from './utils/ReactUtil';
-import { MainPage } from './desktop/pages/MainPage';
-import { MobileMainPage } from './mobile/pages/MobileMainPage';
+import * as React from "react";
+import * as ReactDOM from "react-dom"
+import { ReactUtil } from "./utils/ReactUtil";
+import { Visual } from "./Visual"; 
+import { Contents } from "./Contents";
+import { Footer } from "./Footer";
+
+import "./Application.scss";
 
 export class Application extends React.Component
 {
     public render(): JSX.Element
     {
-        return !ReactUtil.isMobile() 
-            ? <MainPage /> : <MobileMainPage />;
+        return (
+            <div className="app-container">
+                <Visual />
+                <Contents />
+                <Footer />
+            </div>        
+        )
     }
 }
 

@@ -1,0 +1,56 @@
+// ================================================
+// KEYFRAMES
+// ================================================
+@mixin key-move {
+
+    @keyframes move {
+        0%   { 
+            left: 90px; 
+            opacity: 0;
+        }
+        50%  { 
+            left: 0; 
+            opacity: 1;
+        }
+        100% { 
+            left: -90px; 
+            opacity: 0;
+        }    
+    }
+}
+
+// @mixin key-bounce($color:#ffe079) {
+@mixin key-bounce($color:black) {
+    
+    @keyframes bounceOutline {
+        0%{ box-shadow: 0 0 0 4px $color;}
+        25%{ box-shadow: 0 0 0 2px $color;}
+        50%{ box-shadow: 0 0 0 6px $color;}
+        75%{ box-shadow: 0 0 0 4px $color;}
+        100%{ box-shadow: 0 0 0 5px $color;}
+    }    
+    @-webkit-keyframes bounceOutline {
+        0%{ box-shadow: 0 0 0 4px $color;}
+        25%{ box-shadow: 0 0 0 2px $color;}
+        50%{ box-shadow: 0 0 0 6px $color;}
+        75%{ box-shadow: 0 0 0 4px $color;}
+        100%{ box-shadow: 0 0 0 5px $color;}
+    }
+}
+
+// ================================================
+// INCLUDE
+// ================================================
+@include key-move;
+@include key-bounce;
+
+// ================================================
+// ANIMATION
+// ================================================
+@mixin animation-move($count: infinite) {
+    animation: move ease-in-out 5s $count;
+}
+
+@mixin animation-bounce($count: 1) {
+    animation: bounceOutline .55s ease-in-out $count;
+}

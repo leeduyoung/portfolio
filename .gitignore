@@ -25,3 +25,11 @@ pids
 
 node_modules/
 bin/
+assets/js/
+assets/docs/*.pdf
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride

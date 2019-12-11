@@ -1,31 +1,30 @@
-export class ReactUtil
+export namespace ReactUtil
 {
-    public static isNode(): boolean
+    let agent: string = navigator.userAgent;
+
+    export function isNode(): boolean
     {
-        return typeof process === 'object' 
-            && typeof process.versions  === "object"
-            && typeof process.versions.node === "object"
+        return typeof process === "object"
+            && typeof process.versions === "object"
+            && typeof process.versions.node === "object";
     }
 
-    public static isBrowser(): boolean
+    export function isBrowser(): boolean
     {
         return !ReactUtil.isNode()
             && (typeof window !== "undefined" || typeof self !== "undefined");
     }
 
-    public static isMobile(): boolean
-	{
-		let agent: string = navigator.userAgent;
-		return /Android/i.test(agent)
-			|| /BlackBerry/i.test(agent)
-			|| /iPhone|iPad|iPod/i.test(agent)
-			|| /Opera Mini/i.test(agent)
-			|| /IEMobile/i.test(agent);
+    export function isMobile(): boolean
+    {
+        return /Android/i.test(agent)
+            || /BlackBerry/i.test(agent)
+            || /iPhone|iPad|iPod/i.test(agent)
+            || /IEMobile/i.test(agent);
     }
 
-    public static isIos(): boolean
+    export function isIOS(): boolean
     {
-        let agent: string = navigator.userAgent;
         return /iPhone|iPad|iPod/i.test(agent);
     }
 }
