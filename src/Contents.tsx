@@ -27,6 +27,11 @@ export class Contents extends React.Component
                         <p className="description03">
 
                             <p className="simple-career">
+                                {/* <span>아이지넷</span> / 하이브리드 앱, 웹 개발 / 2018.07 ~ 2019.09\
+                                <span>에이치앤비라이프</span> / 하이브리드 앱, 웹 개발 / 2017.03 ~ 2018.07
+                                <span>LEESET(창업)</span> / 전체 서비스 개발 (앱, 웹, 서버) / 2016.04 ~ 2017.03
+                                <span>오픈베이스</span> / 보안 솔루션 연구 및 개발 (백엔드) / 2015.03 ~ 2016.03 */}
+                                
                                 <span>아이지넷</span> / 하이브리드 앱, 웹 개발 / 2018.07 ~ 2019.09
 
                                 <br />

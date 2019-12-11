@@ -10,6 +10,11 @@
     margin: 0 auto;
     background-position: 0 80%;
 
+    @media (max-width: 375px) {
+        min-height: auto;
+        background-position: 45% 0;
+    }
+
     .inner {
         position: relative;
         width: 100%;
@@ -96,6 +101,7 @@
             opacity: 0.6;
             font-size: 1.5rem;
             transition: all 0.5s;
+            -webkit-tap-highlight-color: transparent;
             
             .text {
                 font-weight: 500;

@@ -12,6 +12,10 @@
         height: 100vh;
         background-color: #fafafa;
 
+        @media (max-width: 375px) {
+            min-height: 950px;
+        }
+
         .inner {
             position: absolute;
             top: 50%;
@@ -20,9 +24,13 @@
             text-align: center;
             width: 100%;
 
+            @media (max-width: 375px) {
+                padding: 1.2rem;
+                box-sizing: border-box;
+            }            
+
             .title {
-                font-size: 94px;
-                // color: #8cddeb;
+                font-size: 9.4rem;
                 color: black;
             }
             .sub-title {
@@ -66,8 +74,6 @@
                         height: 3rem;
                         margin-left: 1.5rem;
                         border-radius: 50%;
-                        // background-color: #ffe079;
-                        // box-shadow: 0 0 0 5px #ffe079;
                         background-color: black;
                         box-shadow: 0 0 0 5px black;
                         position: relative;
@@ -119,8 +125,7 @@
             padding-top: 7.8rem;
 
             .title {
-                font-size: 94px;
-                // color: #8cddeb;
+                font-size: 9.4rem;
                 color: black;
             }
             .sub-title {
@@ -136,16 +141,19 @@
                 padding: 11rem 7.7rem;
                 box-sizing: border-box;
 
+                @media (max-width: 375px) {
+                    padding: 4rem 1rem;
+                }
+
                 .left, .right {
                     float: left;
                     padding: 0 1.1rem;
                     box-sizing: border-box;
-                }
-                .left {
                     width: 50%;
-                }
-                .right {
-                    width: 50%;
+
+                    @media (max-width: 375px) {
+                        width: 100%;
+                    }
                 }
 
                 .left .work-item:hover, .right .work-item:hover {
@@ -181,6 +189,10 @@
                         display: block;
                         width: 100%;
                         height: auto;
+
+                        @media (max-width: 375px) {
+                            opacity: 0.3;
+                        }                        
                     }
 
                     figcaption {
@@ -232,6 +244,10 @@
                         left: 50%;
                         top: 50%;
                         transform: translate(-50%,-50%);
+
+                        @media (max-width: 375px) {
+                            display: inherit;
+                        }
 
                         .caption-title {
                             font-size: 3.6rem;

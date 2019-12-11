@@ -25,7 +25,11 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 html {
-	font-size: 10px;
+    font-size: 10px;
+    
+    @media (max-width: 375px) {
+        font-size: 7px;
+    }
 }
 body {
 	line-height: 1;

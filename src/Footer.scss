@@ -20,10 +20,23 @@
             padding-bottom: 7.2rem;
             border-bottom: 1px solid #ddd;
 
+            @media (max-width: 375px) {
+                padding: 1rem 6rem 4rem;
+                text-align: left;
+            }
+
             ul li {
                 display: inline-block;
                 padding-right: 2.2rem;
                 position: relative;
+
+                &:last-child {
+                    margin-top: 2rem;
+                }
+
+                @media (max-width: 375px) {
+                    padding-right: 0;
+                }                
                 
                 a {
                     text-decoration: none;
