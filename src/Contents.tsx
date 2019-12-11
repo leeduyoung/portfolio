@@ -19,7 +19,7 @@ export class Contents extends React.Component
                         </p>
 
                         <p className="description02">
-                            작은 IT 블로그를 운영중이고, 각 분야의 여러 사람들과 함께 
+                            <a href="https://ithub.tistory.com/" className="link">작은 IT 블로그</a>를 운영중이고, 각 분야의 여러 사람들과 함께 
                             <br />협업하여 많은 사람들에게 필요한 무언가를 만들어냈을때 
                             <br />큰 보람을 느끼는 개발자입니다.
                         </p>                        
