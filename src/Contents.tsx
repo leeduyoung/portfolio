@@ -79,7 +79,7 @@ export class Contents extends React.Component
                                                     <strong className="caption-title">두개더</strong> 
                                                     <p className="caption-desc">SNS 기반 퍼스널트레이닝 매칭 O2O 서비스</p>
                                                 </div>
-                                                <a href="work/work_coinone.html"></a>
+                                                <a href="#a" onClick={this.showPopup.bind(this)}></a>
                                             </figcaption>
                                     </figure>
                                 </div>
@@ -130,5 +130,10 @@ export class Contents extends React.Component
                 </article>
             </div>
         )
+    }
+
+    private showPopup()
+    {
+        window.alert("준비중입니다.");
     }
 }
