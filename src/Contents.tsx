@@ -42,7 +42,7 @@ export class Contents extends React.Component
                                 <span>오픈베이스</span> / 보안 솔루션 연구 및 개발 (백엔드) / 2015.03 ~ 2016.03
                             </p>
 
-                            <a href="/career.html" target="_blank">
+                            <a href="/portfolio/career.html" target="_blank">
                                 <span className="text">경력 자세히 보기</span>
                                 <span className="circle-icon">
                                     <IoMdArrowForward />
