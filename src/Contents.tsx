@@ -88,6 +88,19 @@ export class Contents extends React.Component
                                             </figcaption>
                                     </figure>
                                 </div>
+
+                                <div className="work-item">
+                                    <figure>
+                                        <img src="assets/img/8daysplus.jpg" className="work_image" />
+                                            <figcaption className="work_caption">
+                                                <div className="caption-text"> 
+                                                    <strong className="caption-title">에잇데이즈플러스</strong> 
+                                                    <p className="caption-desc">8DAYSPLUS는 현대인의 일과 삶의 조화로운 균형을 위해 다양한 자기계발, 취미 클래스/액티비티/콘텐츠를 제공하는 서비스</p>
+                                                </div>
+                                                <a href="https://www.the8days.com/" target="_blank"></a>
+                                            </figcaption>
+                                    </figure>
+                                </div>
                             </div>
 
                             <div className="right">

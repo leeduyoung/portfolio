@@ -1,120 +1,120 @@
 @import "./lib/animation.scss";
 
 .top-area-container {
-    height: 100vh;
-    min-height: 740px;
-    max-width: 2556px;
-    background: url("../assets/img/main01.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-    background-position: 0 80%;
+  height: 100vh;
+  min-height: 740px;
+  max-width: 2556px;
+  background: url("../assets/img/main01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  background-position: 0 80%;
 
-    @media (max-width: 450px) {
-        min-height: auto;
-        background-position: 45% 0;
-    }
+  @media (max-width: 500px) {
+    min-height: auto;
+    background-position: 45% 0;
+  }
 
-    .inner {
+  .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 33, 33, 0.46);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p.slide-text {
+      color: white;
+      font-size: 3.5rem;
+      font-weight: 300;
+      letter-spacing: 0.3rem;
+
+      position: absolute;
+      left: 50%;
+      top: 40%;
+      transform: translate(-50%, -40%);
+
+      text-shadow: 0 0 4px #fff, 0 0 2px rgba(255, 245, 217, 0);
+
+      & > span {
         position: relative;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(36,33,33,0.46);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include animation-move;
+        opacity: 0;
 
-        p.slide-text {
-            color: white;
-            font-size: 3.5rem;
-            font-weight: 300;
-            letter-spacing: 0.3rem;
-
-            position: absolute;
-            left: 50%;
-            top: 40%;
-            transform: translate(-50%, -40%);         
-
-            text-shadow: 0 0 4px #fff, 0 0 2px rgba(255, 245, 217, 0);
-
-            & > span {
-                position: relative;
-                @include animation-move;
-                opacity: 0;
-
-                &:nth-child(1){
-                    animation-delay: .1s;
-                }
-                &:nth-child(2){
-                    animation-delay: .2s;
-                }
-                &:nth-child(3){
-                    animation-delay: .3s;
-                }
-                &:nth-child(4){
-                    animation-delay: .4s;
-                }
-                &:nth-child(5){
-                    animation-delay: .5s;
-                }
-                &:nth-child(6){
-                    animation-delay: .6s;
-                }
-                &:nth-child(7){
-                    animation-delay: .7s;
-                }
-                &:nth-child(8){
-                    animation-delay: .8s;
-                }
-                &:nth-child(9){
-                    animation-delay: .9s;
-                }
-                &:nth-child(10){
-                    animation-delay: 1s;
-                }
-                &:nth-child(11){
-                    animation-delay: 1.1s;
-                }                
-            }
+        &:nth-child(1) {
+          animation-delay: 0.1s;
         }
-
-        img.main-icon {
-            width: 24rem;
-            height: 24rem;
-
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
+        &:nth-child(2) {
+          animation-delay: 0.2s;
         }
-
-        .scroll {
-            position: absolute;
-            left: 50%;
-            top: 93%;
-            transform: translate(-50%, -93%);
-            font-weight: 300;
-            color: white;
-            letter-spacing: 0.12rem;
-            cursor: pointer;
-            text-align: center;
-            opacity: 0.6;
-            font-size: 1.5rem;
-            transition: all 0.5s;
-            -webkit-tap-highlight-color: transparent;
-            
-            .text {
-                font-weight: 500;
-            }
-
-            .icon {
-                margin-top: 0.7rem;
-            }
-
-            &:hover {
-                opacity: 1;
-                text-shadow: 0 0 4px #fff, 0 0 2px rgba(255, 245, 217, 0.6);
-            }
+        &:nth-child(3) {
+          animation-delay: 0.3s;
         }
+        &:nth-child(4) {
+          animation-delay: 0.4s;
+        }
+        &:nth-child(5) {
+          animation-delay: 0.5s;
+        }
+        &:nth-child(6) {
+          animation-delay: 0.6s;
+        }
+        &:nth-child(7) {
+          animation-delay: 0.7s;
+        }
+        &:nth-child(8) {
+          animation-delay: 0.8s;
+        }
+        &:nth-child(9) {
+          animation-delay: 0.9s;
+        }
+        &:nth-child(10) {
+          animation-delay: 1s;
+        }
+        &:nth-child(11) {
+          animation-delay: 1.1s;
+        }
+      }
     }
+
+    img.main-icon {
+      width: 24rem;
+      height: 24rem;
+
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .scroll {
+      position: absolute;
+      left: 50%;
+      top: 93%;
+      transform: translate(-50%, -93%);
+      font-weight: 300;
+      color: white;
+      letter-spacing: 0.12rem;
+      cursor: pointer;
+      text-align: center;
+      opacity: 0.6;
+      font-size: 1.5rem;
+      transition: all 0.5s;
+      -webkit-tap-highlight-color: transparent;
+
+      .text {
+        font-weight: 500;
+      }
+
+      .icon {
+        margin-top: 0.7rem;
+      }
+
+      &:hover {
+        opacity: 1;
+        text-shadow: 0 0 4px #fff, 0 0 2px rgba(255, 245, 217, 0.6);
+      }
+    }
+  }
 }
